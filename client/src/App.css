@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.block-button {
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+
+.unblock-button {
+  background-color: rgb(55, 255, 0);
+  color: white;
+}
+
+
+
+/* community groups shimmer */
+
+/* Define the shimmer animation */
+@keyframes shimmerAnimation {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* Apply the shimmer effect to the "shimmer" class */
+.shimmer {
+  background-color: #f6f7f8; /* Set this to the desired background color */
+  background-image: linear-gradient(
+    90deg,
+    #f6f7f8,
+    #e0e0e0,
+    #f6f7f8
+  ); /* Set this to a gradient of your choice */
+
+  /* Animation properties */
+  background-size: 1000px 100%;
+  animation: shimmerAnimation 1.5s infinite;
+}
